@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/produtoFragment">
+
+    <fragment
+        android:id="@+id/produtoFragment"
+        android:name="br.com.zup.testelistacompras.produto.ProdutoFragment"
+        android:label="fragment_produto">
+        <action
+            android:id="@+id/action_produtoFragment_to_detalheFragment"
+            app:destination="@id/detalheFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalheFragment"
+        android:name="br.com.zup.testelistacompras.detalhe.DetalheFragment"
+        android:label="fragment_detalhe" />
+
+</navigation>
